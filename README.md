@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Digital Timer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sleek, functional **Digital Timer** built with **React** that allows users to set a custom countdown, start/pause the timer, and reset it back to the initial state. This project focuses on managing complex component states and handling JavaScript intervals efficiently.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+* **Dynamic Countdown:** Accurately tracks remaining time in `MM:SS` format.
+* **Stateful Controls:** Toggle between **Start** and **Pause** with dynamic icon and text updates.
+* **Custom Timer Limit:** Users can increment or decrement the timer limit (e.g., from 25 minutes to 30 minutes) before starting.
+* **Smart Locking:** The "Set Timer Limit" buttons are automatically disabled once the timer has started or is in a paused state to prevent logic conflicts.
+* **Reset Functionality:** Instantly stops the timer and restores the default settings.
+* **Responsive UI:** Clean, modern design with a circular progress display.
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Frontend:** React.js
+* **State Management:** Component State (Class-based)
+* **Styling:** CSS3 (Flexbox for layout, Background images for the timer ring)
+* **Icons:** Provided by CCBP Assets
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📸 Preview
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 💡 What I Learned
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+While building this project, I strengthened my understanding of:
+1.  **`setInterval` & `clearInterval`:** Managing time-based side effects within the React lifecycle.
+2.  **Conditional Rendering:** Changing button icons and text labels based on the `isTimerRunning` state.
+3.  **String Formatting:** Using logic to ensure minutes and seconds always display two digits (e.g., `09:05` instead of `9:5`).
+4.  **Component Architecture:** Organizing logic and UI into a clean, maintainable structure.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏁 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/digital-timer-app.git
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Run the app:**
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+<img width="807" height="625" alt="image" src="https://github.com/user-attachments/assets/0d05df29-615b-41f3-b1e0-4ad7b27b56d8" />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
